@@ -24,15 +24,20 @@ var num = prompt("please enter a number")
 
 //5 
 var red = "red",
-    blue "blue";
-red === blue
-
-//6
-function greetUser() {
-    console.log("Hello you've written the name " + name + "!");
+    blue = "blue";
+if (red === blue){
+    alert("red equals blue");
+} else {
+    alert("red does not equal blue");
 }
 
- greetUser(Joe)
+//6
+function greetUser(name) {
+    alert("Hello you've written the name " + name + "!");
+ }
+ 
+  greetUser("Joe");
+
 
  //7
  function consoleHello(){
@@ -43,18 +48,17 @@ consoleHello()
 
  //8 this is the function prizes
  function prizes() {
-    var stop = false;
-    while (stop === false) {
-        var door = prompt("Pick door number 1, 2 or 3!")
+        var door = prompt("Pick door number 1, 2 or 3!");
         if (door === "1") {
             alert("You picked door #1 You win $50");
-        }if (door === "2") {
+        } else if (door === "2") {
             alert("You picked door #1 You win $500");
-        }if (door === "3") {
+        } else if (door === "3") {
             alert("You picked door #3 You win $1");
-        }if (door > 3)  {alert("There are only 3 doors, try again");
+        } else {
+             alert("There are only 3 doors, try again");
       }  
-    }
+    
 }
 
 prizes();
